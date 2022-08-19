@@ -188,7 +188,7 @@ const _rules = computed(() => {
     }
   }
 
-  if (props.required !== undefined) {
+  if (props.required !== undefined && rules.length < 1) {
     rules.push({ required: !!props.required })
   }
 
